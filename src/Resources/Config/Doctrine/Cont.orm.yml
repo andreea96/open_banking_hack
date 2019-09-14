@@ -1,0 +1,47 @@
+open_banking_hack\src\Entity\Cont:
+   type: entity
+
+   id:
+       idCont:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+           options:
+               unsigned: false
+
+   fields:
+     iban:
+        type: string
+        nullable: false
+
+      user:
+        type: string
+        nullable: false
+
+      password:
+        type: string
+        nullable: false
+
+      suma:
+        type: integer
+        nullable: true
+
+      valuta:
+        type: string
+        nullable: false
+
+      userApp:
+        type: string
+        nullable: false
+
+      passwordApp:
+        type: string
+        nullable: false
+
+       manyToOne:
+        idClient:
+          targetEntity: open_banking_hack\src\Entity\Client
+          joinColumn:
+            name: idClient
+            referencedColumnName: idClient
