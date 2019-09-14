@@ -1,4 +1,90 @@
 {
+    "doctrine/annotations": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "cb4152ebcadbe620ea2261da1a1c5a9b8cea7672"
+        },
+        "files": [
+            "config/routes/annotations.yaml"
+        ]
+    },
+    "doctrine/cache": {
+        "version": "v1.6.2"
+    },
+    "doctrine/collections": {
+        "version": "v1.4.0"
+    },
+    "doctrine/common": {
+        "version": "v2.7.3"
+    },
+    "doctrine/dbal": {
+        "version": "v2.5.13"
+    },
+    "doctrine/inflector": {
+        "version": "v1.2.0"
+    },
+    "doctrine/instantiator": {
+        "version": "1.0.5"
+    },
+    "doctrine/lexer": {
+        "version": "1.0.2"
+    },
+    "doctrine/orm": {
+        "version": "v2.5.14"
+    },
+    "friendsofsymfony/rest-bundle": {
+        "version": "2.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.2",
+            "ref": "cad41ef93d6150067ae2bb3c7fd729492dff6f0a"
+        },
+        "files": [
+            "config/packages/fos_rest.yaml"
+        ]
+    },
+    "fzaninotto/faker": {
+        "version": "v1.8.0"
+    },
+    "hautelook/alice-bundle": {
+        "version": "v1.4.1"
+    },
+    "jms/metadata": {
+        "version": "1.7.0"
+    },
+    "jms/parser-lib": {
+        "version": "1.0.0"
+    },
+    "jms/serializer": {
+        "version": "1.14.0"
+    },
+    "jms/serializer-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "fe60ce509ef04a3f40da96e3979bc8d9b13b2372"
+        },
+        "files": [
+            "config/packages/dev/jms_serializer.yaml",
+            "config/packages/jms_serializer.yaml",
+            "config/packages/prod/jms_serializer.yaml"
+        ]
+    },
+    "nelmio/alice": {
+        "version": "v2.3.5"
+    },
+    "phpcollection/phpcollection": {
+        "version": "0.5.0"
+    },
+    "phpoption/phpoption": {
+        "version": "1.5.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -109,7 +195,19 @@
             "config/routes.yaml"
         ]
     },
+    "symfony/security-core": {
+        "version": "v3.4.31"
+    },
+    "symfony/templating": {
+        "version": "v3.4.31"
+    },
     "symfony/yaml": {
         "version": "v3.4.31"
+    },
+    "willdurand/jsonp-callback-validator": {
+        "version": "v1.1.0"
+    },
+    "willdurand/negotiation": {
+        "version": "v2.3.1"
     }
 }

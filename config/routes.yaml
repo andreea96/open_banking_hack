@@ -4,3 +4,7 @@
 #index:
 #    path: /
 #    defaults: { _controller: 'App\Controller\DefaultController::index' }
+
+getCredit:
+    path: /credit
+    defaults: { _controller: 'App\Controller\OBHController::getCreditAction' }
