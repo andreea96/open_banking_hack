@@ -1,0 +1,43 @@
+App\Entity\Tranzatie:
+   type: entity
+
+   id:
+       idTranzactie:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+           options:
+               unsigned: false
+
+   fields:
+     idContSursa:
+        type: integer
+        nullable: false
+
+      dataCerere:
+        type: date
+        nullable: false
+
+      dataFinalizare:
+        type: date
+        nullable: false
+
+      valoare:
+        type: integer
+        nullable: true
+
+      detalii:
+        type: string
+        nullable: false
+
+      status:
+        type: string
+        nullable: false
+
+       manyToOne:
+        idContSursa:
+          targetEntity: App\Entity\Cont
+          joinColumn:
+            name: id_cont_sursa
+            referencedColumnName: id_cont

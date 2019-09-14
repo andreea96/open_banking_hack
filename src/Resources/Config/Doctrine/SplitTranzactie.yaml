@@ -1,0 +1,39 @@
+App\Entity\SplitTranzactie:
+   type: entity
+
+   id:
+       idSplit:
+           type: integer
+           id: true
+           generator:
+               strategy: AUTO
+           options:
+               unsigned: false
+
+   fields:
+     suma:
+        type: integer
+        nullable: false
+
+      data:
+        type: date
+        nullable: false
+
+       manyToOne:
+        idTranzactie:
+          targetEntity: App\Entity\Tranzactie
+          joinColumn:
+            name: id_tranzactie
+            referencedColumnName: id_tranzactie
+
+       idContSursa:
+          targetEntity: App\Entity\Cont
+          joinColumn:
+            name: id_cont_sursa
+            referencedColumnName: id_cont
+
+        idContDestinatie:
+          targetEntity: App\Entity\Cont
+          joinColumn:
+            name: id_cont_destinatie
+            referencedColumnName: id_cont
